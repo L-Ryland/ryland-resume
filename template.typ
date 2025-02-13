@@ -1,4 +1,4 @@
-
+#import "@preview/fontawesome:0.5.0": fa-arrow-right
 // 字体
 #let font = (
   main: "Noto Serif",
@@ -20,10 +20,10 @@
 #let resume(
   size: 10pt,
   themeColor: rgb(38, 38, 125),
-  top: 1.5cm,
-  bottom: 2cm,
-  left: 2cm,
-  right: 2cm,
+  top: 1cm,
+  bottom: 1cm,
+  left: 1.2cm,
+  right: 1.2cm,
   photograph: "",
   photographWidth: 0em,
   gutterWidth: 0em,
@@ -57,8 +57,10 @@
     v(0.1em),
   )
 
+  show heading.where(level: 3): set text(baseline: -0.3em)
+
   // 更改 bullet list 的图标
-  // set list(indent: 1em, body-indent: 0.8em, marker: faAngleRight)
+  set list(indent: 1em, body-indent: 0.8em, marker: fa-arrow-right(fill: themeColor))
   // 上面的语句无法精确控制图标位置, 因此改用了下列方法重写 list
   show list: it => stack(
     spacing: 0.4em,
@@ -68,7 +70,7 @@
         gutter: 0em,
         box({
           h(0.75em)
-          faAngleRight
+          fa-arrow-right(fill: themeColor)
         }),
         pad(top: 0.15em, item.body),
       )
@@ -79,8 +81,7 @@
   show link: set text(fill: themeColor)
 
   // 主体设定
-  set par(justify: true)
-  show par: set block(spacing: 0.65em)
+  set par(justify: true, spacing: 0.65em)
 
   // 首部与照片
   grid(

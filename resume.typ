@@ -20,14 +20,14 @@
 // 设置简历选项与头部
 #show: resume.with(
   // 字体基准大小
-  size: 10pt,
+  size: 9pt,
   // 标题颜色
   themeColor: themeColor,
   // 控制纸张的边距
-  top: 1.5cm,
-  bottom: 2cm,
-  left: 2cm,
-  right: 2cm,
+  // top: 1.5cm,
+  // bottom: 2cm,
+  // left: 2cm,
+  // right: 2cm,
   // 如果不需要头像，则将下面的参数注释或删除
   // photograph: "images/profile.jpg",
   // photographWidth: 10em,
@@ -37,7 +37,6 @@
   = Ryland Liu
 
   === #fa-briefcase() FullStack/Frontend Engineer
-  #h(0em)
 
   #info(
     color: themeColor,
@@ -131,48 +130,34 @@
 
 #item([*PacPort*], date[July 2022 - June 2024])
 #tech[Frontend Engineer]
-#text(size: 9pt)[
-  As a core frontend developer, led the architecture design and development of a high-traffic e-commerce platform, implementing key
-  features and performance optimizations.
-
-  Collaborated with UI/UX, testing, and product teams to ensure design and product alignment, reducing post-deployment issues by 40%
-  and ensuring on-time delivery.
-
-  Performance Optimization: Improved UI loading speed (30% reduction in page load time) through code splitting, lazy loading, and
-  caching, boosting conversion rates by 15%.
-
-  API Optimization: Refactored REST APIs and optimized database queries, reducing response times by 20%.
-
-  Contributed to backend API design and optimization for efficient frontend-backend interaction.
-  Developed partial backend services using Node.js and Express.js.
-  Worked closely with backend teams to ensure data consistency and system performance.
+#text(size: 8pt)[
+  - Led architecture design and development, optimizing performance for high-traffic environments.
+  - Collaborated cross-functionally, reducing post-deployment issues by 40% and ensuring timely delivery.
+  - Improved UI performance (30% faster load time), increasing conversion rates by 15%.
+  - Optimized REST APIs and database queries, cutting response times by 20%.
+  - Contributed to backend API design and developed partial backend services using Node.js & Express.js.
 ]
 
-#linebreak()
+#h(0.8em)
 
 #item([*State Grid Corporation of China (SGCC)*], date[October 2019 - December 2021])
 #tech[Software Engineer]
-#text(size: 9pt)[
+#pad(left: 0.65em)[
+  #set text(size: 8pt)
+  *System Maintenance & Optimization*: Ensured high availability and stability of internal information systems, diagnosing and resolving hardware/software issues to maximize uptime.
 
-  I was responsible for the maintenance and optimization of the company’s internal information systems, ensuring high availability and stability. Diagnosed and resolved hardware and software issues, maximizing system uptime and user experience.
+  *Network Optimization*: Analyzed traffic and optimized configurations, reducing downtime by 10% and enhancing performance.
 
-  Network Optimization: Analyzed network traffic and optimized network configurations, resolving connectivity issues and reducing
-  system downtime and faults by 10%, improving overall system performance.
+  *Automation*: Developed scripts for system monitoring and issue resolution, minimizing manual intervention and boosting efficiency.
 
-  Automation Scripts: Developed multiple automation scripts for system monitoring and automatic issue resolution, reducing manual
-  intervention and improving operational efficiency.
-
-  Participated in the development and maintenance of the company’s internal management system, developing backend modules using
-  Python and Java to support data processing and business logic.
-  Optimized database queries using SQL, improving data processing efficiency.
-  Collaborated with the frontend team to ensure system interface responsiveness and user experience.
+  *Development & Database Optimization*: Built backend modules (Python, Java) for internal management systems, optimized SQL queries for faster data processing, and collaborated with frontend teams to improve responsiveness.
 ]
 
 == #fa-code() PROJECT EXPERIENCES
 
 #item(link("", [*Pabbit Desk & Pydio Website*]), date[November 2023 - June 2024])
 
-#text(size: 9pt)[
+#text(size: 8pt)[
   Designed and developed the website for managing properties and IoT devices.
 
   Implemented React.js for seamless UI/UX, integrating backend data visualization and responsive design for mobile optimization.
@@ -182,9 +167,11 @@
   Ensured efficient data handling and seamless user interaction.
 ]
 
-#item([*MC2*], date[July 2022-Jan 2023])
+#h(0.8em)
 
-#text(size: 9pt)[
+#item(link("https://mc2.pathscale.com", [*MC2*]), date[July 2022-Jan 2023])
+
+#text(size: 8pt)[
   This project combined AI-driven image generation, quantitative trading, and real-time frontend performance optimization, demonstrating expertise in Vue 3, WebSockets, and real-time data processing.
 
   Developed a dynamic rendering system using React.js and HTML5 Canvas to enable real-time visualization of AI-generated images. Optimized algorithms to efficiently process and display large-scale image data from LLM outputs.
