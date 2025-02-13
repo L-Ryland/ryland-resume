@@ -157,7 +157,8 @@
 
 #item(link("", [*Pabbit Desk & Pydio Website*]), date[November 2023 - June 2024])
 
-#text(size: 8pt)[
+#pad(left: 0.65em)[
+  #set text(size: 8pt)
   Designed and developed the website for managing properties and IoT devices.
 
   Implemented React.js for seamless UI/UX, integrating backend data visualization and responsive design for mobile optimization.
@@ -171,7 +172,8 @@
 
 #item(link("https://mc2.pathscale.com", [*MC2*]), date[July 2022-Jan 2023])
 
-#text(size: 8pt)[
+#pad(left: 0.65em)[
+  #set text(size: 8pt)
   This project combined AI-driven image generation, quantitative trading, and real-time frontend performance optimization, demonstrating expertise in Vue 3, WebSockets, and real-time data processing.
 
   Developed a dynamic rendering system using React.js and HTML5 Canvas to enable real-time visualization of AI-generated images. Optimized algorithms to efficiently process and display large-scale image data from LLM outputs.
