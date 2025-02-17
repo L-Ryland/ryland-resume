@@ -111,30 +111,11 @@
 
 #pad()[
   #set text(9pt)
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   A startup company that bridges the gap between overseas fresh graduates and local businesses by providing precise job matching and addressing information asymmetry.
 ]
 
 
-== #fa-graduation-cap() EDUCATIONAL BACKGROUND
-
-#sidebar(withLine: true, sideWidth: 12%)[
-  2024.01
-
-  2025.01
-][
-  *University of Suffolk* · Msc International Business and Management
-
-  // GPA: 4.48 / 5 · Rank: 15%
-  #text(size: 9pt)[
-    Project Management: Experience in overseeing projects, setting timelines, and ensuring deliverables align with objectives.
-
-    Analytical Thinking: Ability to assess complex situations, identify problems, and devise effective solutions.
-
-    Cross-Cultural Communication: Proficiency in collaborating with diverse teams and understanding global perspectives, which is crucial in today's interconnected tech environment.
-
-    Adaptability: Comfort with navigating changing environments and learning new concepts quickly.
-  ]
-]
 
 == #fa-university() INTERNSHIP EXPERIENCES
 
@@ -142,6 +123,7 @@
 #tech[Software Engineer]
 #pad[
   #set text(size: 9pt)
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   As a professional under supervision, I was responsible for implementing prototype designs, developing code, maintaining Python scripts, and providing various IT support services.
 ]
 
@@ -175,12 +157,15 @@
 == #fa-code() PROJECT EXPERIENCES
 
 #item(link("http://offerlahsg.com", [*Offerlah Website*]), date[September 2024 - Until now])
-#pad(left: .65em)[
+#pad()[
   #set text(size: 9pt)
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   This platform assists international students in gaining exposure and enhancing their prospects of securing their dream jobs.
 
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   As a member of the frontend team, I was responsible for implementing the website's design and architectural framework.
 
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   The application utilizes Next.js to enhance both SEO and server-side performance. By leveraging server-side rendering (SSR) and static site generation (SSG), we ensure better pre-rendered web pages to the clients, reducing page load times, and improve search engine crawlability, leading to better SEO outcomes.
   Additionally, Next.js offers built-in optimizations, such as automatic code splitting and image optimization, further boosting server-side efficiency and overall application performance.
 
@@ -189,14 +174,18 @@
 
 #item(link("", [*Pabbit Desk*]), date[November 2023 - June 2024])
 
-#pad(left: 0.65em)[
+#pad()[
   #set text(size: 9pt)
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   Designed and developed the website for managing properties and IoT devices.
 
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   Implemented React.js for seamless UI/UX, integrating backend data visualization and responsive design for mobile optimization.
 
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   Utilized AWS Cognito for authentication and worked on backend features using Go and Gin framework.
 
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   Ensured efficient data handling and seamless user interaction.
 ]
 
@@ -204,12 +193,36 @@
 
 #item(link("https://mc2.pathscale.com", [*MC2*]), date[July 2022-Jan 2023])
 
-#pad(left: 0.65em)[
+#pad()[
   #set text(size: 9pt)
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   This project combined AI-driven image generation, quantitative trading, and real-time frontend performance optimization, demonstrating expertise in Vue 3, WebSockets, and real-time data processing.
 
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   Developed a dynamic rendering system using React.js and HTML5 Canvas to enable real-time visualization of AI-generated images. Optimized algorithms to efficiently process and display large-scale image data from LLM outputs.
   Built a Vue 3-based web interface with a custom UI framework, integrating WebSocket communication for real-time data exchange and using VueQuery for efficient state management.
 
+  #h(2em) // 手动顶行, 2em 代表两个字的宽度
   Engineered a robust adapter layer to handle data flow between AI models and trading algorithms, ensuring smooth interaction between the visualization and trading components.
+]
+
+== #fa-graduation-cap() EDUCATIONAL BACKGROUND
+
+#sidebar(withLine: true, sideWidth: 12%)[
+  2024.01
+
+  2025.01
+][
+  *University of Suffolk* · Msc International Business and Management
+
+  // GPA: 4.48 / 5 · Rank: 15%
+  #text(size: 8pt)[
+    Project Management: Experience in overseeing projects, setting timelines, and ensuring deliverables align with objectives.
+
+    Analytical Thinking: Ability to assess complex situations, identify problems, and devise effective solutions.
+
+    Cross-Cultural Communication: Proficiency in collaborating with diverse teams and understanding global perspectives, which is crucial in today's interconnected tech environment.
+
+    Adaptability: Comfort with navigating changing environments and learning new concepts quickly.
+  ]
 ]
