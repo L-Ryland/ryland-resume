@@ -20,14 +20,14 @@
 // 设置简历选项与头部
 #show: resume.with(
   // 字体基准大小
-  size: 9pt,
+  size: 10pt,
   // 标题颜色
   themeColor: themeColor,
   // 控制纸张的边距
-  // top: 1.5cm,
-  // bottom: 2cm,
-  // left: 2cm,
-  // right: 2cm,
+  top: 1.5cm,
+  bottom: 2cm,
+  left: 2cm,
+  right: 2cm,
   // 如果不需要头像，则将下面的参数注释或删除
   // photograph: "images/profile.jpg",
   // photographWidth: 10em,
@@ -67,29 +67,6 @@
   coding to change lives and drive business innovation.
 ]
 
-
-== #fa-graduation-cap() EDUCATIONAL BACKGROUND
-
-#sidebar(withLine: true, sideWidth: 12%)[
-  2024.01
-
-  2025.01
-][
-  *Uninversity of Suffolk* · Msc International Business and Management
-
-  // GPA: 4.48 / 5 · Rank: 15%
-  #text(size: 8pt)[
-    Project Management: Experience in overseeing projects, setting timelines, and ensuring deliverables align with objectives.
-
-    Analytical Thinking: Ability to assess complex situations, identify problems, and devise effective solutions.
-
-    Cross-Cultural Communication: Proficiency in collaborating with diverse teams and understanding global perspectives, which is crucial in today's interconnected tech environment.
-
-    Adaptability: Comfort with navigating changing environments and learning new concepts quickly.
-  ]
-]
-
-
 == #fa-wrench() TECHNICAL EXPERTISE
 
 #sidebar(withLine: false, sideWidth: 12%)[
@@ -126,11 +103,53 @@
   date[ Jun 2021 - April 2027],
 )
 
+== #fa-address-card() ENTREPRISE EXPERIENCES
+
+#item([*Gronova*], date([September 2024 - until now]))
+
+#tech[Co-Founder]
+
+#pad()[
+  #set text(9pt)
+  A startup company that bridges the gap between overseas fresh graduates and local businesses by providing precise job matching and addressing information asymmetry.
+]
+
+
+== #fa-graduation-cap() EDUCATIONAL BACKGROUND
+
+#sidebar(withLine: true, sideWidth: 12%)[
+  2024.01
+
+  2025.01
+][
+  *University of Suffolk* · Msc International Business and Management
+
+  // GPA: 4.48 / 5 · Rank: 15%
+  #text(size: 9pt)[
+    Project Management: Experience in overseeing projects, setting timelines, and ensuring deliverables align with objectives.
+
+    Analytical Thinking: Ability to assess complex situations, identify problems, and devise effective solutions.
+
+    Cross-Cultural Communication: Proficiency in collaborating with diverse teams and understanding global perspectives, which is crucial in today's interconnected tech environment.
+
+    Adaptability: Comfort with navigating changing environments and learning new concepts quickly.
+  ]
+]
+
+== #fa-university() INTERNSHIP EXPERIENCES
+
+#item([*Empact*], date[July 2024 - January 2025])
+#tech[Software Engineer]
+#pad[
+  #set text(size: 9pt)
+  As a professional under supervision, I was responsible for implementing prototype designs, developing code, maintaining Python scripts, and providing various IT support services.
+]
+
 == #fa-briefcase() PROFESSIONAL EXPERIENCES
 
 #item([*PacPort*], date[July 2022 - June 2024])
 #tech[Frontend Engineer]
-#text(size: 8pt)[
+#text(size: 9pt)[
   - Led architecture design and development, optimizing performance for high-traffic environments.
   - Collaborated cross-functionally, reducing post-deployment issues by 40% and ensuring timely delivery.
   - Improved UI performance (30% faster load time), increasing conversion rates by 15%.
@@ -143,7 +162,7 @@
 #item([*State Grid Corporation of China (SGCC)*], date[October 2019 - December 2021])
 #tech[Software Engineer]
 #pad(left: 0.65em)[
-  #set text(size: 8pt)
+  #set text(size: 9pt)
   *System Maintenance & Optimization*: Ensured high availability and stability of internal information systems, diagnosing and resolving hardware/software issues to maximize uptime.
 
   *Network Optimization*: Analyzed traffic and optimized configurations, reducing downtime by 10% and enhancing performance.
@@ -155,10 +174,23 @@
 
 == #fa-code() PROJECT EXPERIENCES
 
-#item(link("", [*Pabbit Desk & Pydio Website*]), date[November 2023 - June 2024])
+#item(link("http://offerlahsg.com", [*Offerlah Website*]), date[September 2024 - Until now])
+#pad(left: .65em)[
+  #set text(size: 9pt)
+  This platform assists international students in gaining exposure and enhancing their prospects of securing their dream jobs.
+
+  As a member of the frontend team, I was responsible for implementing the website's design and architectural framework.
+
+  The application utilizes Next.js to enhance both SEO and server-side performance. By leveraging server-side rendering (SSR) and static site generation (SSG), we ensure better pre-rendered web pages to the clients, reducing page load times, and improve search engine crawlability, leading to better SEO outcomes.
+  Additionally, Next.js offers built-in optimizations, such as automatic code splitting and image optimization, further boosting server-side efficiency and overall application performance.
+
+]
+#h(0.8em)
+
+#item(link("", [*Pabbit Desk*]), date[November 2023 - June 2024])
 
 #pad(left: 0.65em)[
-  #set text(size: 8pt)
+  #set text(size: 9pt)
   Designed and developed the website for managing properties and IoT devices.
 
   Implemented React.js for seamless UI/UX, integrating backend data visualization and responsive design for mobile optimization.
@@ -173,7 +205,7 @@
 #item(link("https://mc2.pathscale.com", [*MC2*]), date[July 2022-Jan 2023])
 
 #pad(left: 0.65em)[
-  #set text(size: 8pt)
+  #set text(size: 9pt)
   This project combined AI-driven image generation, quantitative trading, and real-time frontend performance optimization, demonstrating expertise in Vue 3, WebSockets, and real-time data processing.
 
   Developed a dynamic rendering system using React.js and HTML5 Canvas to enable real-time visualization of AI-generated images. Optimized algorithms to efficiently process and display large-scale image data from LLM outputs.

@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.5.0": fa-arrow-right
+#import "@preview/fontawesome:0.5.0": fa-arrow-right, fa-icon, fa-use-pro
 // 字体
 #let font = (
   main: "Noto Serif",
@@ -41,6 +41,8 @@
       right: right,
     ),
   )
+
+  fa-use-pro()
 
   // 基础字体设定
   set text(font: (font.main, font.sans, font.cjk, font.icon), size: size, lang: "zh")
