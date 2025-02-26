@@ -156,7 +156,10 @@
 
 == #fa-code() PROJECT EXPERIENCES
 
-#item(link("http://offerlahsg.com", [*Offerlah Website*]), date[September 2024 - Until now])
+#item(
+  link("http://offerlahsg.com", [*Offerlah Website*#sub(typographic: false)[ (click to preview)]]),
+  date[September 2024 - Until now],
+)
 #pad()[
   #set text(size: 9pt)
   #h(2em) // 手动顶行, 2em 代表两个字的宽度
@@ -172,7 +175,7 @@
 ]
 #h(0.8em)
 
-#item(link("", [*Pabbit Desk*]), date[November 2023 - June 2024])
+#item(link("", [*Pabbit Desk* #sub[(click to preview)]]), date[November 2023 - June 2024])
 
 #pad()[
   #set text(size: 9pt)
@@ -191,7 +194,7 @@
 
 #h(0.8em)
 
-#item(link("https://mc2.pathscale.com", [*MC2*]), date[July 2022-Jan 2023])
+#item(link("https://mc2.pathscale.com", [*MC2* #sub[(click to preview)]]), date[July 2022-Jan 2023])
 
 #pad()[
   #set text(size: 9pt)

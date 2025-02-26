@@ -1,4 +1,6 @@
-#import "@preview/fontawesome:0.5.0": fa-arrow-right, fa-icon, fa-use-pro
+
+#import "@preview/fontawesome:0.5.0": *
+// #import "@preview/fontawesome:0.5.0": fa-arrow-right, fa-icon, fa-use-pro
 // 字体
 #let font = (
   main: "Noto Serif",
@@ -42,7 +44,7 @@
     ),
   )
 
-  fa-use-pro()
+  // fa-use-pro()
 
   // 基础字体设定
   set text(font: (font.main, font.sans, font.cjk, font.icon), size: size, lang: "zh")
@@ -80,7 +82,12 @@
   )
 
   // 链接颜色
-  show link: set text(fill: themeColor)
+  show link: it => {
+    set text(fill: themeColor)
+    set sub(baseline: -0.1em, typographic: false)
+    show sub: set text(fill: black)
+    it
+  }
 
   // 主体设定
   set par(justify: true, spacing: 0.65em)
