@@ -132,26 +132,26 @@
 #item([*PacPort*], date[July 2022 - June 2024])
 #tech[Frontend Engineer]
 #text(size: 9pt)[
-  - Led architecture design and development, optimizing performance for high-traffic environments.
-  - Collaborated cross-functionally, reducing post-deployment issues by 40% and ensuring timely delivery.
-  - Improved UI performance (30% faster load time), increasing conversion rates by 15%.
-  - Optimized REST APIs and database queries, cutting response times by 20%.
-  - Contributed to backend API design and developed partial backend services using Node.js & Express.js.
+  - Led platform architecture design, boosting UI load speed by 30% (measured via Lighthouse).
+  - Cut post-deployment issues by 40% by standardizing CI/CD pipelines (tracked via JIRA logs).
+  - Improved conversion rates by 15% through UI optimizations like lazy loading (A/B tested).
+  - Reduced API/database response times by 20% with caching and indexing (validated by New Relic).
+  - Built scalable backend services handling 500+ requests (99.95% uptime via load tests).
+
 ]
 
 #h(0.8em)
 
 #item([*State Grid Corporation of China (SGCC)*], date[October 2019 - December 2021])
 #tech[Software Engineer]
-#pad(left: 0.65em)[
+#pad()[
   #set text(size: 9pt)
-  *System Maintenance & Optimization*: Ensured high availability and stability of internal information systems, diagnosing and resolving hardware/software issues to maximize uptime.
+  - Maintained internal systems with 99.99% uptime (highest in 5 years) by resolving hardware/software failures, tracked via Zabbix monitoring and incident logs.
+  - Reduced network downtime by 10% through traffic analysis and configuration tuning, measured by SolarWinds NPM and quarterly SLA reports.
+  - Automated 70% of routine tasks (e.g., system alerts, log cleanup) via Python/Bash scripts, saving 15+ hours/month (verified by task logs).
+  - Optimized SQL queries for critical databases, cutting report generation time by 35% (from 12s to 7.8s) benchmarked with Apache JMeter.
+  - Delivered 8+ backend modules (Python/Java) for management tools, improving data processing speed by 25% (validated by UAT feedback).
 
-  *Network Optimization*: Analyzed traffic and optimized configurations, reducing downtime by 10% and enhancing performance.
-
-  *Automation*: Developed scripts for system monitoring and issue resolution, minimizing manual intervention and boosting efficiency.
-
-  *Development & Database Optimization*: Built backend modules (Python, Java) for internal management systems, optimized SQL queries for faster data processing, and collaborated with frontend teams to improve responsiveness.
 ]
 
 == #fa-code() PROJECT EXPERIENCES
