@@ -17,21 +17,23 @@
 // 主题颜色
 #let themeColor = rgb(38, 38, 125)
 
+// fit the resume into one page
+
 // 设置简历选项与头部
 #show: resume.with(
   // 字体基准大小
-  size: 10pt,
+  size: 8pt,
   // 标题颜色
   themeColor: themeColor,
   // 控制纸张的边距
-  top: 1.5cm,
-  bottom: 2cm,
-  left: 2cm,
-  right: 2cm,
+  top: 0.8cm,
+  bottom: 0.8cm,
+  left: 1cm,
+  right: 1cm,
   // 如果不需要头像，则将下面的参数注释或删除
   // photograph: "images/profile.jpg",
   // photographWidth: 10em,
-  gutterWidth: 2em,
+  gutterWidth: 1.5em,
 )[
 
   = Ryland Liu
@@ -62,7 +64,7 @@
     ),
   )
 
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
+  #h(1.5em) // 手动顶行, 2em 代表两个字的宽度
   Passionate about *Web3*, *LLMs* (Large Language Models), data science, and emerging technology trends, and believes in the power of
   coding to change lives and drive business innovation.
 ]
@@ -87,7 +89,6 @@
   Excellent communicaton and listening skills, Team collaboration
 ]
 
-
 == #fa-trophy() CERTIFICATES
 
 #item([*Google UX Design Professional Certificate*], date[Nov 2024])
@@ -103,6 +104,79 @@
   date[ Jun 2021 - April 2027],
 )
 
+== #fa-briefcase() PROFESSIONAL EXPERIENCES
+
+#item([*PacPort*], date[July 2022 - June 2024])
+#tech[Frontend Engineer]
+#text(size: 7pt)[
+  - Led platform architecture design, boosting UI load speed by 30% (measured via Lighthouse).
+  - Cut post-deployment issues by 40% by standardizing CI/CD pipelines (tracked via JIRA logs).
+  - Improved conversion rates by 15% through UI optimizations like lazy loading (A/B tested).
+  - Reduced API/database response times by 20% with caching and indexing (validated by New Relic).
+  - Built scalable backend services handling 500+ requests (99.95% uptime via load tests).
+
+]
+
+#h(0.5em)
+
+#item([*State Grid Corporation of China (SGCC)*], date[October 2019 - December 2021])
+#tech[Software Engineer]
+#pad()[
+  #set text(size: 7pt)
+
+  - Achieved 99.99% system uptime (5-year peak) by resolving hardware/software issues, ensuring uninterrupted power supply for 1.1B+ users.
+  - Reduced network downtime by 10% via traffic analysis and configuration tuning.
+  - Automated 70% of routine tasks (e.g., alerts, log cleanup) with Python/Bash, saving 15+ hours/month.
+  - Optimized SQL queries to slash report generation time by 35% (12s →7.8s).
+  - Built 8+ backend modules (Python/Java), boosting data processing speed by 25%.
+
+]
+
+
+== #fa-code() PROJECT EXPERIENCES
+
+#item(
+  link("http://offerlahsg.com", [*Offerlah Website*#sub(typographic: false)[ (click to preview)]]),
+  date[September 2024 - Until now],
+)
+#pad()[
+  #set text(size: 7pt)
+  - Drove platform development from concept to launch (0→1) using Next.js
+  - Built core architecture with SSR/SSG for enhanced SEO and performance
+  - Implemented image optimization and code splitting features
+  - Established component library with design team collaboration
+  - Tech: Next.js, React, TypeScript
+]
+#h(0.5em)
+
+#item(
+  link("https://desk.dev.pacport.dev/desk/login", [*Pabbit Desk* #sub[(click to preview)]]),
+  date[November 2023 - June 2024],
+)
+
+#pad()[
+  #set text(size: 7pt)
+  - Built property/IoT management system using React.js + Go (Gin) for 500+ devices
+  - Created mobile-optimized dashboard cutting user task time by 40%
+  - Integrated AWS Cognito for 2K+ monthly users
+  - Improved API speeds by 35% through backend optimization
+  - Tech: React, Go, AWS, PostgreSQL
+]
+
+#h(0.5em)
+
+#item(link("https://mc2.pathscale.com", [*MC2* #sub[(click to preview)]]), date[July 2022-Jan 2023])
+
+#pad()[
+  #set text(size: 7pt)
+  - Created real-time data visualization system handling 10K+ AI-generated images/hour
+  - Built trading interface with Vue 3/WebSocket integration achieving 95% data accuracy
+  - Reduced data processing latency by 40% through optimized adapter layer design
+  - Cut API calls by 35% via VueQuery state management implementation
+  - Tech: Vue 3, React, WebSocket, LLM integration
+]
+
+
 == #fa-address-card() ENTREPRISE EXPERIENCES
 
 #item([*Gronova*], date([September 2024 - until now]))
@@ -110,7 +184,7 @@
 #tech[Co-Founder]
 
 #pad()[
-  #set text(9pt)
+  #set text(7pt)
   #h(2em) // 手动顶行, 2em 代表两个字的宽度
   A startup company that bridges the gap between overseas fresh graduates and local businesses by providing precise job matching and addressing information asymmetry.
 ]
@@ -122,91 +196,9 @@
 #item([*Empact*], date[July 2024 - January 2025])
 #tech[Software Engineer]
 #pad[
-  #set text(size: 9pt)
+  #set text(size: 7pt)
   #h(2em) // 手动顶行, 2em 代表两个字的宽度
   As a professional under supervision, I was responsible for implementing prototype designs, developing code, maintaining Python scripts, and providing various IT support services.
-]
-
-== #fa-briefcase() PROFESSIONAL EXPERIENCES
-
-#item([*PacPort*], date[July 2022 - June 2024])
-#tech[Frontend Engineer]
-#text(size: 9pt)[
-  - Led platform architecture design, boosting UI load speed by 30% (measured via Lighthouse).
-  - Cut post-deployment issues by 40% by standardizing CI/CD pipelines (tracked via JIRA logs).
-  - Improved conversion rates by 15% through UI optimizations like lazy loading (A/B tested).
-  - Reduced API/database response times by 20% with caching and indexing (validated by New Relic).
-  - Built scalable backend services handling 500+ requests (99.95% uptime via load tests).
-
-]
-
-#h(0.8em)
-
-#item([*State Grid Corporation of China (SGCC)*], date[October 2019 - December 2021])
-#tech[Software Engineer]
-#pad()[
-  #set text(size: 9pt)
-  - Maintained internal systems with 99.99% uptime (highest in 5 years) by resolving hardware/software failures, tracked via Zabbix monitoring and incident logs.
-  - Reduced network downtime by 10% through traffic analysis and configuration tuning, measured by SolarWinds NPM and quarterly SLA reports.
-  - Automated 70% of routine tasks (e.g., system alerts, log cleanup) via Python/Bash scripts, saving 15+ hours/month (verified by task logs).
-  - Optimized SQL queries for critical databases, cutting report generation time by 35% (from 12s to 7.8s) benchmarked with Apache JMeter.
-  - Delivered 8+ backend modules (Python/Java) for management tools, improving data processing speed by 25% (validated by UAT feedback).
-
-]
-
-== #fa-code() PROJECT EXPERIENCES
-
-#item(
-  link("http://offerlahsg.com", [*Offerlah Website*#sub(typographic: false)[ (click to preview)]]),
-  date[September 2024 - Until now],
-)
-#pad()[
-  #set text(size: 9pt)
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  This platform assists international students in gaining exposure and enhancing their prospects of securing their dream jobs.
-
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  As a member of the frontend team, I was responsible for implementing the website's design and architectural framework.
-
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  The application utilizes Next.js to enhance both SEO and server-side performance. By leveraging server-side rendering (SSR) and static site generation (SSG), we ensure better pre-rendered web pages to the clients, reducing page load times, and improve search engine crawlability, leading to better SEO outcomes.
-  Additionally, Next.js offers built-in optimizations, such as automatic code splitting and image optimization, further boosting server-side efficiency and overall application performance.
-
-]
-#h(0.8em)
-
-#item(link("", [*Pabbit Desk* #sub[(click to preview)]]), date[November 2023 - June 2024])
-
-#pad()[
-  #set text(size: 9pt)
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  Designed and developed the website for managing properties and IoT devices.
-
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  Implemented React.js for seamless UI/UX, integrating backend data visualization and responsive design for mobile optimization.
-
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  Utilized AWS Cognito for authentication and worked on backend features using Go and Gin framework.
-
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  Ensured efficient data handling and seamless user interaction.
-]
-
-#h(0.8em)
-
-#item(link("https://mc2.pathscale.com", [*MC2* #sub[(click to preview)]]), date[July 2022-Jan 2023])
-
-#pad()[
-  #set text(size: 9pt)
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  This project combined AI-driven image generation, quantitative trading, and real-time frontend performance optimization, demonstrating expertise in Vue 3, WebSockets, and real-time data processing.
-
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  Developed a dynamic rendering system using React.js and HTML5 Canvas to enable real-time visualization of AI-generated images. Optimized algorithms to efficiently process and display large-scale image data from LLM outputs.
-  Built a Vue 3-based web interface with a custom UI framework, integrating WebSocket communication for real-time data exchange and using VueQuery for efficient state management.
-
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  Engineered a robust adapter layer to handle data flow between AI models and trading algorithms, ensuring smooth interaction between the visualization and trading components.
 ]
 
 == #fa-graduation-cap() EDUCATIONAL BACKGROUND
@@ -219,13 +211,9 @@
   *University of Suffolk* · Msc International Business and Management
 
   // GPA: 4.48 / 5 · Rank: 15%
-  #text(size: 8pt)[
-    Project Management: Experience in overseeing projects, setting timelines, and ensuring deliverables align with objectives.
+  #text(size: 7pt)[
+    Developed problem-solving and analytical skills through data-driven business strategy projects, leveraging tools like Excel and SQL for market analysis.
 
-    Analytical Thinking: Ability to assess complex situations, identify problems, and devise effective solutions.
-
-    Cross-Cultural Communication: Proficiency in collaborating with diverse teams and understanding global perspectives, which is crucial in today's interconnected tech environment.
-
-    Adaptability: Comfort with navigating changing environments and learning new concepts quickly.
+    Collaborated in cross-functional teams to design and present scalable solutions for case studies, demonstrating agile project management and technical communication skills.
   ]
 ]

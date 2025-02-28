@@ -50,36 +50,37 @@
   set text(font: (font.main, font.sans, font.cjk, font.icon), size: size, lang: "zh")
 
   // 标题及小标题样式
-  show heading: set text(themeColor, 1.1em)
+  show heading: set text(themeColor, 1em)
 
   // 二级标题下加一条横线
   show heading.where(level: 2): it => stack(
-    v(0.3em),
+    v(-0.4em),
     it,
     v(0.6em),
     line(length: 100%, stroke: 0.05em + themeColor),
     v(0.1em),
   )
 
-  show heading.where(level: 3): set text(baseline: -0.3em)
+  show heading.where(level: 3): set text(baseline: -0.4em)
 
   // 更改 bullet list 的图标
-  set list(indent: 1em, body-indent: 0.8em, marker: fa-arrow-right(fill: themeColor))
+  // set list(indent: 1em, body-indent: 0.8em, marker: fa-arrow-right(fill: themeColor))
+  set list(indent: 1em, body-indent: 0.8em, tight: false)
   // 上面的语句无法精确控制图标位置, 因此改用了下列方法重写 list
-  show list: it => stack(
-    spacing: 0.4em,
-    ..it.children.map(item => {
-      grid(
-        columns: (2em, 1fr),
-        gutter: 0em,
-        box({
-          h(0.75em)
-          fa-arrow-right(fill: themeColor)
-        }),
-        pad(top: 0.15em, item.body),
-      )
-    }),
-  )
+  // show list: it => stack(
+  //   spacing: 0.4em,
+  //   ..it.children.map(item => {
+  //     grid(
+  //       columns: (2em, 1fr),
+  //       gutter: 0em,
+  //       box({
+  //         h(0.75em)
+  //         fa-arrow-right(fill: themeColor)
+  //       }),
+  //       pad(top: 0.15em, item.body),
+  //     )
+  //   }),
+  // )
 
   // 链接颜色
   show link: it => {
