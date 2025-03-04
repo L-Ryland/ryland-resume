@@ -27,7 +27,7 @@
   themeColor: themeColor,
   // 控制纸张的边距
   top: 0.8cm,
-  bottom: 0.8cm,
+  bottom: 1cm,
   left: 1cm,
   right: 1cm,
   // 如果不需要头像，则将下面的参数注释或删除
@@ -40,29 +40,9 @@
 
   === #fa-briefcase() FullStack/Frontend Engineer
 
-  #info(
-    color: themeColor,
-    (
-      // 其实 icon 也可以直接填字符串, 如 "fa-phone.svg"
-      icon: fa-phone(),
-      content: "(+65) 91827282",
-    ),
-    (
-      icon: fa-envelope(),
-      content: "saintleso@gmail.com",
-      link: "mailto:saintleso@gmail.com",
-    ),
-    (
-      icon: fa-linkedin(),
-      content: "www.linkedin.com/in/ryland-liu",
-      link: "https://www.linkedin.com/in/ryland-liu",
-    ),
-    (
-      icon: fa-github(),
-      content: "github.com/L-Ryland",
-      link: "https://github.com/L-Ryland",
-    ),
-  )
+  #import "basic_info_cn.typ": info_display
+
+  #info_display(themeColor: themeColor)
 
   #h(1.5em) // 手动顶行, 2em 代表两个字的宽度
   Passionate about *Web3*, *LLMs* (Large Language Models), data science, and emerging technology trends, and believes in the power of
@@ -114,7 +94,6 @@
   - Improved conversion rates by 15% through UI optimizations like lazy loading (A/B tested).
   - Reduced API/database response times by 20% with caching and indexing (validated by New Relic).
   - Built scalable backend services handling 500+ requests (99.95% uptime via load tests).
-
 ]
 
 #h(0.5em)
