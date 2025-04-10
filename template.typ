@@ -47,7 +47,7 @@
   // fa-use-pro()
 
   // 基础字体设定
-  set text(font: (font.main, font.sans, font.cjk, font.icon), size: size, lang: "zh")
+  set text(font: (font.main, font.sans, font.cjk, font.icon), fallback: true, size: size, lang: "zh")
 
   // 标题及小标题样式
   show heading: set text(themeColor, 1em)
