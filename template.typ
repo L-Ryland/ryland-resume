@@ -108,10 +108,14 @@
 
 
 // 带竖线的侧边栏
-#let sidebar(side, content, withLine: true, sideWidth: 12%) = context {
+#let sidebar(side, content, height: 0, withLine: true, sideWidth: 12%) = context {
   let sideSize = measure(side)
   let contentSize = measure(content)
-  let height = calc.max(sideSize.height, contentSize.height) + 2.6em
+  let height = if height == 0 {
+    calc.max(sideSize.height, contentSize.height) + 2.6em
+  } else {
+    height
+  }
   grid(
     columns: (sideWidth, 0%, 1fr),
     gutter: 0.75em,
@@ -157,13 +161,13 @@
         }
       })
     })
-    .join(h(0.5em) + "·" + h(0.5em))
+    .join(h(0.8em) + "·" + h(0.8em))
   v(0.5em)
 }
 
 
 // 日期： 颜色变灰
-#let date(body) = text(
+#let gray(body) = text(
   fill: rgb(128, 128, 128),
   size: 0.9em,
   body,
@@ -171,10 +175,7 @@
 
 
 // 技术: 字体变细
-#let tech(body) = block({
-  set text(weight: "extralight")
-  body
-})
+#let tech(body) = text(weight: "extralight", font: font.mono, body)
 
 // 项目
 // #let item(

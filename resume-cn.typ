@@ -65,22 +65,22 @@
 
 == #fa-trophy() 证书
 
-#item([*Google UX 设计专业证书*], date[2024年11月])
+#item([*Google UX 设计专业证书*], gray[2024年11月])
 
 #item(
   [ *计算机与软件技术资格认证*（软件设计师） ],
-  date[2021年11月],
+  gray[2021年11月],
 )
 
 #item(
   [ *RHCE/RHCSA* ],
   [ *服务器运维* ],
-  date[2021年6月 - 2027年4月],
+  gray[2021年6月 - 2027年4月],
 )
 
 == #fa-briefcase() 工作经历
 
-#item([*PacPort*], date[2022年7月 - 2024年6月])
+#item([*PacPort*], gray[2022年7月 - 2024年6月])
 #tech[前端工程师]
 #text(size: 7pt)[
   - 主导平台架构设计，提升UI加载速度30%（通过Lighthouse测量）。
@@ -92,7 +92,7 @@
 
 #h(0.5em)
 
-#item([*国家电网公司（SGCC）*], date[2019年10月 - 2021年12月])
+#item([*国家电网公司（SGCC）*], gray[2019年10月 - 2021年12月])
 #tech[软件工程师]
 #pad()[
   #set text(size: 7pt)
@@ -108,7 +108,7 @@
 
 #item(
   link("http://offerlahsg.com", [*Offerlah官网*#sub(typographic: false)[（点击预览）]]),
-  date[2024年9月 - 至今],
+  gray[2024年9月 - 至今],
 )
 #pad()[
   #set text(size: 7pt)
@@ -122,7 +122,7 @@
 
 #item(
   link("https://desk.dev.pacport.dev/desk/login", [*Pabbit Desk* #sub[(点击预览)]]),
-  date[2023年11月 - 2024年6月],
+  gray[2023年11月 - 2024年6月],
 )
 
 #pad()[
@@ -136,7 +136,7 @@
 
 #h(0.5em)
 
-#item(link("https://mc2.pathscale.com", [*MC2* #sub[(点击预览)]]), date[2022年7月-2023年1月])
+#item(link("https://mc2.pathscale.com", [*MC2* #sub[(点击预览)]]), gray[2022年7月-2023年1月])
 
 #pad()[
   #set text(size: 7pt)
@@ -144,12 +144,12 @@
   - 使用Vue 3/WebSocket集成交易界面，实现95%数据准确性
   - 通过优化适配层设计将数据处理延迟降低40%
   - 使用VueQuery状态管理减少35%的API调用
-  - 技术栈：Vue 3, React, WebSocket, LLM集成
+  - 技术栈：Vue 3, WebSocket, LLM集成
 ]
 
 == #fa-address-card() 创业经历
 
-#item([*Gronova*], date[2024年9月 - 至今])
+#item([*Gronova*], gray[2024年9月 - 至今])
 
 #tech[联合创始人]
 
@@ -161,7 +161,7 @@
 
 == #fa-university() 实习经历
 
-#item([*Empact*], date[2024年7月 - 2025年1月])
+#item([*Empact*], gray[2024年7月 - 2025年1月])
 #tech[软件工程师]
 #pad[
   #set text(size: 7pt)

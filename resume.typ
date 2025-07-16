@@ -27,7 +27,7 @@
   themeColor: themeColor,
   // 控制纸张的边距
   top: 0.8cm,
-  bottom: 1cm,
+  bottom: 0.8cm,
   left: 1cm,
   right: 1cm,
   // 如果不需要头像，则将下面的参数注释或删除
@@ -36,17 +36,20 @@
   gutterWidth: 1.5em,
 )[
 
-  = Ryland Liu
+  #import "basic_info_default.typ": info_display
 
-  === #fa-briefcase() FullStack/Frontend Engineer
+  #info_display(
+    themeColor: themeColor,
+    cn: true,
+    // show_image: true,
+    name: "Ryland Liu",
+    position: "Frontend Engineer",
+    description: [
+      Passionate about *Web3*, *LLMs* (Large Language Models), data science, and emerging technology trends, and believes in the power of
+      coding to change lives and drive business innovation.
+    ],
+  )
 
-  #import "basic_info_cn.typ": info_display
-
-  #info_display(themeColor: themeColor)
-
-  #h(1.5em) // 手动顶行, 2em 代表两个字的宽度
-  Passionate about *Web3*, *LLMs* (Large Language Models), data science, and emerging technology trends, and believes in the power of
-  coding to change lives and drive business innovation.
 ]
 
 == #fa-wrench() TECHNICAL EXPERTISE
@@ -66,28 +69,42 @@
 
   Python, Rust, Go, Node.js, API Design, Database Design (Postgres, MongoDB)
 
-  Excellent communicaton and listening skills, Team collaboration
+  Excellent communication and listening skills, Team collaboration
 ]
 
 == #fa-trophy() CERTIFICATES
 
-#item([*Google UX Design Professional Certificate*], date[Nov 2024])
+#item([*Google UX Design Professional Certificate*], gray[Nov 2024])
 
-#item(
-  [ *Computer and Software Technology Qualification* (Software Design Engineer) ],
-  date[ Nov 2021 ],
-)
+#item([ *Computer and Software Technology Qualification* (Software Design Engineer) ], gray[ Nov 2021 ])
 
-#item(
-  [ *RHCE/RHCSA* ],
-  [ *Server Operations* ],
-  date[ Jun 2021 - April 2027],
-)
+#item([ *RHCE/RHCSA* ], [ *Server Operations* ], gray[ Jun 2021 - April 2027])
+
+== #fa-address-card() ENTERPRISE EXPERIENCES
+
+#item([*Gronova* - #tech[Co-Founder]], gray([September 2024 - until now]))
+#pad()[
+  #set text(7pt)
+  A startup company that bridges the gap between overseas fresh graduates and local businesses by providing precise job matching and addressing information asymmetry.
+]
+#text(size: 7pt)[
+  - Designed frontend architecture with React.js and Next.js, ensuring a smooth user experience.
+  - Led the frontend development of the job matching platform, code review for 10+ team members, ensuring high-quality code.
+]
+
+
 
 == #fa-briefcase() PROFESSIONAL EXPERIENCES
 
-#item([*PacPort*], date[July 2022 - June 2024])
-#tech[Frontend Engineer]
+#item([*Empact Pte Ltd (Singapore)*], gray([January 2025 - until now]))
+#item(tech[Tech Consultant], gray([Remote - Part time]))
+#text(size: 7pt)[
+  - Developed and maintained scalable snippets for internal system using Python, xml and JavaScript, improving code reusability and efficiency.
+  - Provided technical support and solutions, leveraged semantic html markup, ensuring accessibility and optimization for SEO.
+]
+
+#item([*PacPort (Japan)*], gray[July 2022 - June 2024])
+#item(tech[Frontend Engineer], gray[Remote - Fulltime ])
 #text(size: 7pt)[
   - Led platform architecture design, boosting UI load speed by 30% (measured via Lighthouse).
   - Cut post-deployment issues by 40% by standardizing CI/CD pipelines (tracked via JIRA logs).
@@ -96,10 +113,8 @@
   - Built scalable backend services handling 500+ requests (99.95% uptime via load tests).
 ]
 
-#h(0.5em)
-
-#item([*State Grid Corporation of China (SGCC)*], date[October 2019 - December 2021])
-#tech[Software Engineer]
+#item([*State Grid Corporation of China (SGCC)*], gray[October 2019 - December 2021])
+#item(tech[Associate IT Engineer], gray([Zhejiang, China - Fulltime]))
 #pad()[
   #set text(size: 7pt)
 
@@ -115,8 +130,8 @@
 == #fa-code() PROJECT EXPERIENCES
 
 #item(
-  link("http://offerlahsg.com", [*Offerlah Website*#sub(typographic: false)[ (click to preview)]]),
-  date[September 2024 - Until now],
+  link("http://offerlahsg.com", [*Offerlah Website*#sub(typographic: false)[ (for Gronova)]]),
+  gray[September 2024 - February 2025],
 )
 #pad()[
   #set text(size: 7pt)
@@ -126,11 +141,10 @@
   - Established component library with design team collaboration
   - Tech: Next.js, React, TypeScript
 ]
-#h(0.5em)
 
 #item(
-  link("https://desk.dev.pacport.dev/desk/login", [*Pabbit Desk* #sub[(click to preview)]]),
-  date[November 2023 - June 2024],
+  link("https://desk.dev.pacport.dev/desk/login", [*Pabbit Desk* #sub[(for PacPort)]]),
+  gray[November 2023 - June 2024],
 )
 
 #pad()[
@@ -142,9 +156,7 @@
   - Tech: React, Go, AWS, PostgreSQL
 ]
 
-#h(0.5em)
-
-#item(link("https://mc2.pathscale.com", [*MC2* #sub[(click to preview)]]), date[July 2022-Jan 2023])
+#item(link("https://mc2.pathscale.com", [*MC2* #sub[(for MC2 Finance)]]), gray[July 2022-Jan 2023])
 
 #pad()[
   #set text(size: 7pt)
@@ -152,33 +164,11 @@
   - Built trading interface with Vue 3/WebSocket integration achieving 95% data accuracy
   - Reduced data processing latency by 40% through optimized adapter layer design
   - Cut API calls by 35% via VueQuery state management implementation
-  - Tech: Vue 3, React, WebSocket, LLM integration
-]
-
-
-== #fa-address-card() ENTREPRISE EXPERIENCES
-
-#item([*Gronova*], date([September 2024 - until now]))
-
-#tech[Co-Founder]
-
-#pad()[
-  #set text(7pt)
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  A startup company that bridges the gap between overseas fresh graduates and local businesses by providing precise job matching and addressing information asymmetry.
+  - Tech: Vue 3, WebSocket, LLM integration
 ]
 
 
 
-== #fa-university() INTERNSHIP EXPERIENCES
-
-#item([*Empact*], date[July 2024 - January 2025])
-#tech[Software Engineer]
-#pad[
-  #set text(size: 7pt)
-  #h(2em) // 手动顶行, 2em 代表两个字的宽度
-  As a professional under supervision, I was responsible for implementing prototype designs, developing code, maintaining Python scripts, and providing various IT support services.
-]
 
 == #fa-graduation-cap() EDUCATIONAL BACKGROUND
 
@@ -195,4 +185,15 @@
 
     Collaborated in cross-functional teams to design and present scalable solutions for case studies, demonstrating agile project management and technical communication skills.
   ]
+
+  *INTERNSHIP EXPERIENCES*
+  #linebreak()
+  #item([*Empact* - #tech[Software Engineer]], gray[July 2024 - January 2025])
+  As a professional under supervision, I was responsible for developing implementing prototype designs, developing code, maintaining Python scripts, and providing various IT support services.
 ]
+
+// #sidebar(withLine: true, sideWidth: 12%, height: 3em)[
+//   2020.09
+
+//   2023.01
+// ][*National Open University* · Information Technology and Management]

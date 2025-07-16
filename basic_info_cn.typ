@@ -1,5 +1,5 @@
 #import "template.typ": info
-#import "@preview/fontawesome:0.5.0": fa-phone, fa-envelope, fa-linkedin, fa-github
+#import "@preview/fontawesome:0.5.0": fa-phone, fa-envelope, fa-linkedin, fa-github, fa-weixin, fa-globe
 
 #let info_display(themeColor: str(str)) = {
   info(
@@ -10,9 +10,18 @@
       content: "(+86) 185-0680-0365",
     ),
     (
-      icon: fa-envelope(),
+      icon: fa-weixin(),
+      content: "Ryland_Liu",
+    ),
+    (
+      icon: (fa-envelope()),
       content: "saintleso@gmail.com",
       link: "mailto:saintleso@gmail.com",
+    ),
+    (
+      icon: fa-globe(),
+      content: "https://l-ryland.github.io",
+      link: "https://l-ryland.github.io",
     ),
     (
       icon: fa-linkedin(),
