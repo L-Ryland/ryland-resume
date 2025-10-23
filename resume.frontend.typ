@@ -105,7 +105,7 @@
   - Led platform architecture design, boosting UI load speed by 30% (measured via Lighthouse).
   - Cut post-deployment issues by 40% by standardizing CI/CD pipelines (tracked via JIRA logs).
   - Improved conversion rates by 15% through UI optimizations like lazy loading (A/B tested).
-  - Reduced API/database response times by 20% with caching and indexing (validated by New Relic).
+  - Reduced API/database response times by 20% with caching and indexing.
   - Built scalable backend services handling 500+ requests (99.95% uptime via load tests).
 ]
 
