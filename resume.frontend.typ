@@ -22,14 +22,14 @@
 // 设置简历选项与头部
 #show: resume.with(
   // 字体基准大小
-  size: 8pt,
+  size: 9pt,
   // 标题颜色
   themeColor: themeColor,
   // 控制纸张的边距
-  top: 0.8cm,
-  bottom: 0.8cm,
-  left: 1cm,
-  right: 1cm,
+  // top: 0.8cm,
+  // bottom: 0.8cm,
+  // left: 1cm,
+  // right: 1cm,
   // 如果不需要头像，则将下面的参数注释或删除
   // photograph: "images/profile.jpg",
   // photographWidth: 10em,
@@ -45,27 +45,24 @@
     name: "Ryland Liu",
     position: "Frontend Engineer",
     description: [
-      Passionate about *Web3*, *LLMs* (Large Language Models), data science, and emerging technology trends, and believe in the power of
-      coding to change lives and drive business innovation.
+      Frontend engineer building accessible, internationalized React applications with scalable microfrontend architectures.
     ],
   )
 
 ]
 
+// #set par(spacing: 1em)
+
 == #fa-wrench() TECHNICAL EXPERTISE
 
 #sidebar(withLine: false, sideWidth: 12%)[
-  *OS*
-
   *Frontend*
 
-  *Soft Skills*
+  *Engineering*
 ][
-  #fa-linux() Linux #h(0.5em) #fa-apple() MacOS #h(0.5em) #fa-windows() Windows
+  React.js, TypeScript, Next.js, Vue.js, Vite, Module Federation
 
-  React.js, TypeScript, Next.js, Vue.js, Vite, Microfrontend (Module Federation)
-
-  Excellent communication and listening skills, Team collaboration
+  a11y, i18n, automated testing, RBAC, CI/CD, cross-functional collaboration
 ]
 
 == #fa-trophy() CERTIFICATES
@@ -79,62 +76,88 @@
 == #fa-address-card() ENTERPRISE EXPERIENCES
 
 #item([*Gronova* - #tech[Co-Founder]], gray([September 2024 - February 2025]))
-#pad()[
-  #set text(7pt)
-  A startup company that bridges the gap between overseas fresh graduates and local businesses by providing precise job matching and addressing information asymmetry.
-]
-#text(size: 7pt)[
-  - Designed frontend architecture with React.js and Next.js, ensuring a smooth user experience.
-  - Led the frontend development of the job matching platform, code review for 10+ team members, ensuring high-quality code.
+#text()[
+  - Co-founded a job-matching startup connecting overseas graduates with local businesses.
+  - Designed React/Next.js frontend architecture, led platform development, and reviewed code for 10+ contributors.
 ]
 
+== #fa-graduation-cap() EDUCATIONAL BACKGROUND
+
+#item([*University of Suffolk* · Msc International Business and Management], gray([2024.01 - 2025.01]))
+// #sidebar(withLine: true, sideWidth: 12%)[
+//   2024.01
+
+//   2025.01
+// ][
+//   *University of Suffolk* · Msc International Business and Management
+
+//   #text()[
+//     Applied Excel and SQL to data-driven strategy projects and collaborated across teams on scalable solutions.
+//   ]
+
+//   // *INTERNSHIP EXPERIENCES*
+//   // #linebreak()
+//   // #item([*Empact* - #tech[Software Engineer]], gray[July 2024 - January 2025])
+//   // As a professional under supervision, I was responsible for developing implementing prototype designs, developing code, maintaining Python scripts, and providing various IT support services.
+// ]
 
 
 == #fa-briefcase() PROFESSIONAL EXPERIENCES
 
+#item([*DBS Tech*], gray([December 2025 - Until now]))
+#item(tech[Frontend Engineer], gray[China - Full time])
+#text()[
+  - Developed React.js applications within a Module Federation microfrontend architecture.
+  - Collaborated cross-functionally to deliver features, unit tests, and code reviews for reliable releases.
+]
+
+#pad(bottom: 5pt)[]
+
 #item([*Empact Pte Ltd (Singapore)*], gray([January 2025 - October 2025]))
 #item(tech[Tech Consultant], gray([Remote - Part time]))
-#text(size: 7pt)[
-  - Developed and maintained scalable snippets for internal system using Python, xml and JavaScript, improving code reusability and efficiency.
-  - Provided technical support and solutions, leveraged semantic html markup, ensuring accessibility and optimization for SEO.
+#text()[
+  - Built reusable Python, XML, and JavaScript snippets for internal systems, improving development efficiency.
+  - Provided technical support and implemented semantic HTML for accessibility and SEO.
 ]
+
+#pad(bottom: 5pt)[]
 
 #item([*PacPort (Japan)*], gray[July 2022 - June 2024])
 #item(tech[Frontend Engineer], gray[Remote - Fulltime ])
-#text(size: 7pt)[
-  - Led platform architecture design, boosting UI load speed by 30% (measured via Lighthouse).
-  - Cut post-deployment issues by 40% by standardizing CI/CD pipelines (tracked via JIRA logs).
-  - Improved conversion rates by 15% through UI optimizations like lazy loading (A/B tested).
-  - Reduced API/database response times by 20% with caching and indexing.
-  - Built scalable backend services handling 500+ requests (99.95% uptime via load tests).
+#text()[
+  - Led platform architecture and UI optimization, improving load speed 30% and conversion 15%.
+  - Standardized CI/CD to cut post-deployment issues 40%; optimized caching and indexing to reduce API/database response times 20%.
+  - Built scalable backend services handling 500+ requests with 99.95% uptime.
 ]
+
+#pad(bottom: 5pt)[]
 
 #item([*State Grid Corporation of China (SGCC)*], gray[October 2019 - December 2021])
 #item(tech[Associate IT Engineer], gray([Zhejiang, China - Fulltime]))
 #pad()[
-  #set text(size: 7pt)
-
-  - Achieved 99.99% system uptime (5-year peak) by resolving hardware/software issues, ensuring uninterrupted power supply for 1.1B+ users.
-  - Reduced network downtime by 10% via traffic analysis and configuration tuning.
-  - Automated 70% of routine tasks (e.g., alerts, log cleanup) with Python/Bash, saving 15+ hours/month.
-  - Optimized SQL queries to slash report generation time by 35% (12s →7.8s).
-  - Built 8+ backend modules (Python/Java), boosting data processing speed by 25%.
-
+  // #set text(size: 7pt)
+  - Maintained 99.99% system uptime supporting uninterrupted power supply for 1.1B+ users.
+  - Automated 70% of routine operations with Python/Bash, saving 15+ hours/month and reducing network downtime 10%.
+  - Built 8+ Python/Java modules and optimized SQL, reducing report generation time 35%.
 ]
 
 == #fa-code() PROJECT EXPERIENCES
+
+#item(link(" ", [*Sail Nudges*#sub(typographic: false)[ (for DBS)]]))
+#pad(bottom: 5pt)[
+  // #set text(size: 7pt)
+  - Developed a nudge management platform using React.js and Module Federation microfrontends.
+  - Delivered accessible, responsive, internationalized interfaces with RBAC and 90% automated test coverage.
+]
 
 #item(
   link("http://offerlahsg.com", [*Offerlah Website*#sub(typographic: false)[ (for Gronova)]]),
   gray[September 2024 - February 2025],
 )
-#pad()[
-  #set text(size: 7pt)
-  - Drove platform development from concept to launch (0→1) using Next.js
-  - Built core architecture with SSR/SSG for enhanced SEO and performance
-  - Implemented image optimization and code splitting features
-  - Established component library with design team collaboration
-  - Tech: Next.js, React, TypeScript
+#pad(bottom: 5pt)[
+  // #set text(size: 7pt)
+  - Built and launched a Next.js platform from concept to production using SSR/SSG, image optimization, and code splitting.
+  - Established a reusable component library in collaboration with the design team.
 ]
 
 #item(
@@ -142,50 +165,20 @@
   gray[November 2023 - June 2024],
 )
 
-#pad()[
-  #set text(size: 7pt)
-  - Built property/IoT management system using React.js + Go (Gin) for 500+ devices
-  - Created mobile-optimized dashboard cutting user task time by 40%
-  - Integrated AWS Cognito for 2K+ monthly users
-  - Improved API speeds by 35% through backend optimization
-  - Tech: React, Go, AWS, PostgreSQL
+#pad(bottom: 5pt)[
+  // #set text(size: 7pt)
+  - Built a React.js + Go (Gin) property/IoT management system supporting 500+ devices.
+  - Created a mobile dashboard reducing task time 40%, integrated AWS Cognito for 2K+ monthly users, and improved API speed 35%.
 ]
 
 #item(link("https://mc2.pathscale.com", [*MC2* #sub[(for MC2 Finance)]]), gray[July 2022-Jan 2023])
 
-#pad()[
-  #set text(size: 7pt)
-  - Created real-time data visualization system handling 10K+ AI-generated images/hour
-  - Built trading interface with Vue 3/WebSocket integration achieving 95% data accuracy
-  - Reduced data processing latency by 40% through optimized adapter layer design
-  - Cut API calls by 35% via VueQuery state management implementation
-  - Tech: Vue 3, WebSocket, LLM integration
+#pad(bottom: 5pt)[
+  // #set text(size: 7pt)
+  - Built real-time Vue 3/WebSocket visualization and trading interfaces processing 10K+ AI images/hour with 95% data accuracy.
+  - Reduced data latency 40% through adapter optimization and API calls 35% with VueQuery.
 ]
 
-
-
-
-== #fa-graduation-cap() EDUCATIONAL BACKGROUND
-
-#sidebar(withLine: true, sideWidth: 12%)[
-  2024.01
-
-  2025.01
-][
-  *University of Suffolk* · Msc International Business and Management
-
-  // GPA: 4.48 / 5 · Rank: 15%
-  #text(size: 7pt)[
-    Developed problem-solving and analytical skills through data-driven business strategy projects, leveraging tools like Excel and SQL for market analysis.
-
-    Collaborated in cross-functional teams to design and present scalable solutions for case studies, demonstrating agile project management and technical communication skills.
-  ]
-
-  *INTERNSHIP EXPERIENCES*
-  #linebreak()
-  #item([*Empact* - #tech[Software Engineer]], gray[July 2024 - January 2025])
-  As a professional under supervision, I was responsible for developing implementing prototype designs, developing code, maintaining Python scripts, and providing various IT support services.
-]
 
 // #sidebar(withLine: true, sideWidth: 12%, height: 3em)[
 //   2020.09
