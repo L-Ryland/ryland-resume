@@ -1,5 +1,5 @@
 #import "template.typ": info
-#import "@preview/fontawesome:0.5.0": fa-phone, fa-envelope, fa-linkedin, fa-github, fa-weixin, fa-globe
+#import "@preview/fontawesome:0.6.2": fa-phone, fa-envelope, fa-linkedin, fa-github, fa-weixin, fa-globe
 
 #let info_display(themeColor: str(str)) = {
   info(

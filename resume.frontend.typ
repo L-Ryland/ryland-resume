@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.5.0": *
+#import "@preview/fontawesome:0.6.2": *
 #import "template.typ": *
 
 // 设置图标, 来源: https://fontawesome.com/icons/
@@ -45,7 +45,7 @@
     name: "Ryland Liu",
     position: "Frontend Engineer",
     description: [
-      Passionate about *Web3*, *LLMs* (Large Language Models), data science, and emerging technology trends, and believes in the power of
+      Passionate about *Web3*, *LLMs* (Large Language Models), data science, and emerging technology trends, and believe in the power of
       coding to change lives and drive business innovation.
     ],
   )
@@ -63,7 +63,7 @@
 ][
   #fa-linux() Linux #h(0.5em) #fa-apple() MacOS #h(0.5em) #fa-windows() Windows
 
-  React.js, TypeScript, Next.js, Vue.js, Vite
+  React.js, TypeScript, Next.js, Vue.js, Vite, Microfrontend (Module Federation)
 
   Excellent communication and listening skills, Team collaboration
 ]
@@ -92,7 +92,7 @@
 
 == #fa-briefcase() PROFESSIONAL EXPERIENCES
 
-#item([*Empact Pte Ltd (Singapore)*], gray([January 2025 - until now]))
+#item([*Empact Pte Ltd (Singapore)*], gray([January 2025 - October 2025]))
 #item(tech[Tech Consultant], gray([Remote - Part time]))
 #text(size: 7pt)[
   - Developed and maintained scalable snippets for internal system using Python, xml and JavaScript, improving code reusability and efficiency.

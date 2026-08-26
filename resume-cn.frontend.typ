@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.5.0": *
+#import "@preview/fontawesome:0.6.2": *
 #import "template.typ": *
 
 // 图标设置说明（来源：https://fontawesome.com/icons/）
@@ -124,7 +124,10 @@
   - 技术栈：Next.js, React, TypeScript
 ]
 
-#item(link("https://desk.dev.pacport.dev/desk/login", [*Pabbit Desk* #sub[(for PacPort)]]), gray[2023年11月 - 2024年6月])
+#item(
+  link("https://desk.dev.pacport.dev/desk/login", [*Pabbit Desk* #sub[(for PacPort)]]),
+  gray[2023年11月 - 2024年6月],
+)
 
 #pad()[
   #set text(size: 7pt)

@@ -1,13 +1,10 @@
 
-#import "@preview/fontawesome:0.5.0": *
-// #import "@preview/fontawesome:0.5.0": fa-arrow-right, fa-icon, fa-use-pro
 // 字体
 #let font = (
   main: "Noto Serif",
   sans: "Noto Sans",
   mono: "Noto Sans Mono",
   cjk: "Noto Sans CJK TC",
-  icon: "FontAwesome",
 )
 
 // 图标
@@ -47,7 +44,7 @@
   // fa-use-pro()
 
   // 基础字体设定
-  set text(font: (font.main, font.sans, font.cjk, font.icon), fallback: true, size: size, lang: "zh")
+  set text(font: (font.main, font.sans, font.cjk), fallback: true, size: size, lang: "zh")
 
   // 标题及小标题样式
   show heading: set text(themeColor, 1em)

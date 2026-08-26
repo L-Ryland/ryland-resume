@@ -1,4 +1,4 @@
-#import "@preview/fontawesome:0.5.0": *
+#import "@preview/fontawesome:0.6.2": *
 #import "template.typ": *
 
 // 图标设置说明（来源：https://fontawesome.com/icons/）

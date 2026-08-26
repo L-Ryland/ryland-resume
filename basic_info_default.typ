@@ -1,5 +1,5 @@
 #import "template.typ": info
-#import "@preview/fontawesome:0.5.0": fa-briefcase, fa-envelope, fa-github, fa-linkedin, fa-phone
+#import "@preview/fontawesome:0.6.2": fa-briefcase, fa-envelope, fa-github, fa-linkedin, fa-phone
 #import "@preview/wrap-it:0.1.1": wrap-content
 
 
