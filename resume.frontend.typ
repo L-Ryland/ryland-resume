@@ -40,7 +40,7 @@
 
   #info_display(
     themeColor: themeColor,
-    cn: true,
+    cn: false,
     // show_image: true,
     name: "Ryland Liu",
     position: "Frontend Engineer",

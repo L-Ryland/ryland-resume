@@ -18,7 +18,7 @@
       icon: fa-phone(),
       content: if cn {
         "(+86) 185-0680-0365"
-      } else { "(+65) 91728272" },
+      } else { "(+65) 81309716" },
     ),
     (
       icon: fa-envelope(),
